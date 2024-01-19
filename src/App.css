@@ -1,0 +1,142 @@
+/* App.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.dataContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 450px;
+}
+
+.header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bio {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.waveButton {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.waveButton:hover:not([disabled]) {
+  background-color: #45a049;
+}
+
+.waveButton:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.notice {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style for each individual message in the list */
+.messageItem {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Add space between items */
+}
+
+/* Style for the user's address, message timestamp, and content */
+.address,
+.timestamp,
+.messageContent {
+  font-size: 1rem;
+  color: #555; /* Adjust color if needed */
+}
+
+.timestamp {
+  margin-top: 8px;
+}
+
+.messageContent {
+  margin-top: 8px;
+}
+
+/* Style for the message list container */
+.messageListContainer {
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+  margin-top: 16px;
+}
+
+/* Center the wave button */
+.centerButton {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Style for the message list container */
+.messageListContainer {
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+  margin-top: 16px;
+
+  /* Customize the scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #87d179 #f8f8f8;
+}
+
+.messageListContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messageListContainer::-webkit-scrollbar-thumb {
+  background-color: #87d179; /* Color of the thumb */
+  border-radius: 4px;
+}
+
+.messageListContainer::-webkit-scrollbar-track {
+  background-color: #f8f8f8; /* Color of the track */
+  border-radius: 4px;
+}
